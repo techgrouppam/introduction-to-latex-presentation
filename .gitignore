@@ -1,2 +1,7 @@
 # Exclude LaTex files
 *.tex
+
+# Exclude LaTeX generated files
+*.aux
+*.log
+*.out
