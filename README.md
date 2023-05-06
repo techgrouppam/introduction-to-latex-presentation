@@ -8,12 +8,12 @@ LaTeX is a powerful typesetting system used for creating professional-looking do
 
 ## Presentation Slides
 
-The presentation slides are available in [PDF format](link-to-pdf-file) for viewing and download.
+The presentation slides are available in [PDF format](src/introduction-to-latex.pdf) for viewing and download.
 
 ## Contents
 
-- [Slides](link-to-pdf-file)
-- [Additional Resources](additional-resources.md)
+- [Hands on](src/hands-on.pdf)
+- [Addvanced](src/others.pdf)
 
 ## Additional Resources
 
