@@ -6,3 +6,6 @@
 *.log
 *.out
 *.gz
+
+# Exclude PDFs for now.
+*.pdf
