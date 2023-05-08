@@ -9,3 +9,5 @@
 
 # Exclude PDFs for now.
 *.pdf
+
+! src/introduction_to_latex.pdf
