@@ -6,12 +6,13 @@ This repository contains the materials for my presentation on "Getting Started w
 
 LaTeX is a powerful typesetting system used for creating professional-looking documents, particularly in the fields of academia and research. This presentation aims to provide an introduction to LaTeX, covering the basics of setting up LaTeX, its syntax, and some advanced features.
 
-## Presentation Slides
+## Presentation documents
 
-The presentation slides are available in [PDF format](src/introduction-to-latex.pdf) for viewing and download.
+The presentation documents are available in [PDF format](src/introduction-to-latex.pdf) for viewing and download.
 
 ## Contents
 
+-[Introduction](src/introduction-to-latex.pdf)
 - [Hands on](src/hands-on.pdf)
 - [Addvanced](src/others.pdf)
 
