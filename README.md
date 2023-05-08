@@ -12,9 +12,20 @@ The presentation documents are available in [PDF format](src/introduction-to-lat
 
 ## Contents
 
--[Introduction](src/introduction-to-latex.pdf)
+- [Introduction](src/introduction-to-latex.pdf)
 - [Hands on](src/hands-on.pdf)
-- [Addvanced](src/others.pdf)
+- [Advanced](src/others.pdf)
+
+## Requirements
+
+To follow along with the presentation and work on LaTeX documents, you will need the following software:
+
+- LaTeX distribution: Install a LaTeX distribution such as [TeX Live](https://www.tug.org/texlive/) or [MiKTeX](https://miktex.org/). These distributions include all the necessary packages and tools for working with LaTeX.
+
+- LaTeX editor: You can choose from various LaTeX editors depending on your platform and preferences. Here are a few options:
+  - [Overleaf](https://www.overleaf.com/): An online LaTeX editor with collaborative features.
+  - [TeXstudio](https://www.texstudio.org/): A cross-platform LaTeX editor with an integrated PDF viewer.
+  - [TeXworks](https://www.tug.org/texworks/): A simple and lightweight LaTeX editor for beginners.
 
 ## Additional Resources
 
@@ -28,4 +39,3 @@ For more information and to further explore LaTeX, check out the following resou
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-
