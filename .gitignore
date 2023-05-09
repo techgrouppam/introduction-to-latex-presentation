@@ -6,8 +6,12 @@
 *.log
 *.out
 *.gz
+*.snm
+*.toc
+*.nav
+*.vrb
 
 # Exclude PDFs for now.
 *.pdf
 
-! src/introduction_to_latex.pdf
+!src/introduction_to_latex.pdf
