@@ -13,8 +13,8 @@ The presentation documents are available in [PDF format](src/introduction-to-lat
 ## Contents
 
 - [Introduction](src/introduction-to-latex.pdf)
-- [Hands on](src/hands-on.pdf)
-- [Advanced](src/others.pdf)
+- [Hands On](src/hands-on.pdf)
+- [Tutorial](src/Tutorial)
 
 ## Requirements
 
