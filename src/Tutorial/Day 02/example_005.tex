@@ -1,0 +1,50 @@
+\documentclass{book}
+
+\usepackage{multirow}
+\usepackage{multicol, tabularx,siunitx}
+
+\author{Martin}
+\date{\today}
+\title{Tabels in \LaTeX{}}
+\begin{document}
+    \maketitle
+
+   
+        \begin{table}
+		\caption{Table one}
+		\label{table:one}
+            \begin{tabular}{|l |c| r|}
+			
+				\hline  \hline
+                \textbf{Column one} & \texttt{Column two} & \textit{Column Three} \\
+\hline \hline
+                $\alpha$ & \(\beta\) & \(\gamma\) \\ 
+                \hline 
+                1 & 1110.1 & a \\ 
+\hline
+				2 & 3224.23& b\\ \hline
+				 3 & 987.45 & c \\ \hline
+			    4 & 65.8 & d \\ \hline
+			    5 & 2019.75 & e \\
+                \hline
+            \end{tabular}
+        \end{table}
+
+\begin{table}
+	\caption{Multirow table}
+	\label{table:table2}
+	\begin{tabular}{|l|S|r|}
+		\textbf{Value 1} & \textbf{Value 2} & \textbf{Value 3} \\
+		$\alpha$ & $\beta$ & $\gamma$ \\ \hline 
+		\multicolumn{2}{c|}{12} & a  \\ 
+		2 & 10.1 & b\\ \hline 
+		3 & 23.113231 & c\\ \hline
+		4 & 25.113231 & d\\ \hline
+	\end{tabular}
+
+\end{table}
+   
+
+
+
+\end{document}

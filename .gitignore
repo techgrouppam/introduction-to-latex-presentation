@@ -16,7 +16,7 @@
 # Exclude all .tex files except in src/Tutorial/Day 01/
 *.tex
 !src/Tutorial/Day 01/*.tex
-!src/Tutorial/Day 01/*.tex
+!src/Tutorial/Day 02/*.tex
 
 # Exclude all .pdf files except introduction_to_latex.pdf
 *.pdf
