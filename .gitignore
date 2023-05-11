@@ -7,15 +7,20 @@
 *.toc
 *.nav
 *.vrb
+*.lof
 
+*.sh
 # Exclude PDFs for now.
 *.pdf
 
 # Exclude all .tex files except in src/Tutorial/Day 01/
 *.tex
 !src/Tutorial/Day 01/*.tex
+!src/Tutorial/Day 01/*.tex
 
 # Exclude all .pdf files except introduction_to_latex.pdf
 *.pdf
 !src/introduction_to_latex.pdf
 !src/Tutorial/Day 01/*.pdf
+!src/Tutorial/Day 02/*.pdf
+!src/Tutorial/*.pdf
