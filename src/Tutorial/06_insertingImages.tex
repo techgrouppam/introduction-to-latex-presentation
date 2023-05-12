@@ -1,0 +1,80 @@
+\documentclass{beamer}
+
+\usetheme{Madrid}
+\usecolortheme{default}
+
+\title{Insert an Image in LaTeX}
+\subtitle{Adding a Figure or Picture}
+\author{Martin}
+\date{\today}
+
+\usepackage{graphicx}
+\usepackage{subcaption}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Captioned Images / Figures}
+  \begin{figure}
+    \includegraphics[width=\linewidth]{../images/the-tech-group-pam-high-resolution-logo-black-on-transparent-background_01.png}
+    \caption{A Logo.}
+    \label{fig:logo1}
+  \end{figure}
+  Figure \ref{fig:logo1} shows our logo.
+\end{frame}
+
+\begin{frame}{Image Positioning / Float}
+  \begin{figure}[h!]
+    % Image positioning code here
+  \end{figure}
+  \begin{itemize}
+    \item Use float options to control image placement
+    \item Options: h (here), t (top), b (bottom), p (page), ! (override)
+    \item Example: \texttt{\textbackslash{}begin\{figure\}[h!]}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Multiple Images / Subfigures}
+  \begin{figure}[h!]
+    \centering
+    \begin{subfigure}[b]{0.4\linewidth}
+      \includegraphics[width=\linewidth]{../images/the-tech-group-pam-high-resolution-logo-black-on-transparent-background_01.png}
+      \caption{Logo2.}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.4\linewidth}
+      \includegraphics[width=\linewidth]{../images/the-tech-group-pam-high-resolution-logo-black-on-transparent-background_01.png}
+      \caption{More Logo2.}
+    \end{subfigure}
+    \caption{The same Logo. Two times.}
+    \label{fig:logo2}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Multiple Images / Subfigures (Contd.)}
+  \begin{figure}[h!]
+    \centering
+    \begin{subfigure}[b]{0.2\linewidth}
+      \includegraphics[width=\linewidth]{../images/the-tech-group-pam-high-resolution-logo-black-on-transparent-background_01.png}
+       \caption{Logo.}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.2\linewidth}
+      \includegraphics[width=\linewidth]{../images/the-tech-group-pam-high-resolution-logo-black-on-transparent-background_01.png}
+      \caption{More Logo.}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.2\linewidth}
+      \includegraphics[width=\linewidth]{../images/the-tech-group-pam-high-resolution-logo-black-on-transparent-background_01.png}
+      \caption{Logo3.}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.5\linewidth}
+      \includegraphics[width=\linewidth]{../images/the-tech-group-pam-high-resolution-logo-black-on-transparent-background_01.png}
+      \caption{Too much Logo.}
+    \end{subfigure}
+    \caption{The same Logo. Multiple times.}
+    \label{fig:logo3}
+  \end{figure}
+\end{frame}
+
+\end{document}

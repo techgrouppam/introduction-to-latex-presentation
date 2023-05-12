@@ -1,0 +1,60 @@
+\documentclass{beamer}
+
+\include{{beamer_header.tex}}
+
+
+\usepackage{tikz}
+
+\title{Draw pictures in \LaTeX}
+\subtitle{With \texttt{tikz/pgf}}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Basic example}
+  \begin{itemize}
+    \item The \texttt{pgf/tikz} package allows you to draw pictures from within your \LaTeX{} document.
+    \item It enables you to create vector graphics without the need for external tools.
+    \item The syntax of \texttt{tikz} involves programming the vector graphics using predefined macros.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{A basic example}
+  \begin{figure}[h!]
+    \begin{center}
+      \begin{tikzpicture}
+        \draw [red,dashed] (-2.5,2.5) rectangle (-1.5,1.5) node [black,below] {Start};
+        \draw [thick] (-2,2) to [out=10,in=190] (2,2) to [out=10,in=90] (6,0) to [out=-90,in=30] (-2,-2);
+        \draw [fill] (5,0.1) rectangle (7,-0.1) node [black,right] {Obstacle};
+        \draw [red,fill] (-2,-2) circle [radius=0.2] node [black,below=4] {Point of interest};
+      \end{tikzpicture}
+      \caption{Example graphic made with \texttt{tikz}.}
+    \end{center}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{The syntax of \texttt{tikz}}
+  \begin{itemize}
+    \item To draw elements with \texttt{tikz}, we use the \texttt{\textbackslash draw} command.
+    \item Options for color, line style, etc., can be specified in brackets.
+    \item Coordinates are specified in Cartesian coordinates.
+    \item Text is placed using \texttt{node} commands.
+    \item Each command inside the \texttt{tikzpicture} environment should be terminated with a semicolon.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{The syntax of \texttt{tikz} (contd.)}
+  \begin{itemize}
+    \item Lines can be drawn by specifying a path using the \texttt{\textbackslash draw} command and the \texttt{to} command.
+    \item Bending of lines can be achieved by setting the \texttt{in} and \texttt{out} angles.
+    \item There are many more options available for customizing the graphics.
+    \item \texttt{tikz} integrates smoothly with the rest of your document.
+  \end{itemize}
+\end{frame}
+
+\end{document}

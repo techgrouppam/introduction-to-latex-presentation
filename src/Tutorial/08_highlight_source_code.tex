@@ -1,0 +1,51 @@
+\documentclass{beamer}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\usetheme{default}
+\lstset{
+    language=bash,
+    basicstyle=\small\ttfamily,
+    numbers=left,
+    numberstyle=\tiny,
+    frame=tb,
+    tabsize=4,
+    columns=fixed,
+    showstringspaces=false,
+    showtabs=false,
+    keepspaces=true,
+    commentstyle=\color{red},
+    keywordstyle=\color{blue}
+}
+
+\title{Highlight Source Code in \LaTeX{} with the \texttt{lstlisting} Package}
+\author{Martin}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Example: Bash Script}
+\begin{lstlisting}
+#!/bin/bash
+# A simple Bash script
+echo "Hello, World!"
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Example: Java Code}
+\begin{lstlisting}[language=Java]
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+\end{lstlisting}
+\end{frame}
+
+\end{document}

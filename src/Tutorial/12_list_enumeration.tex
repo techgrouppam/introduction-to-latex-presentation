@@ -1,0 +1,78 @@
+\documentclass{beamer}
+
+\include{{beamer_header}}
+
+\title{\LaTeX{} List - Enumerate and Itemize}
+
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Introduction}
+  Learn how to use the \texttt{enumerate} and \texttt{itemize} environments to add ordered, unordered, and nested lists to your document.
+\end{frame}
+
+\begin{frame}{Unordered Lists}
+  \begin{itemize}
+    \item One
+    \item Two
+    \item Three
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Ordered Lists}
+  \begin{enumerate}
+    \item One
+    \item Two
+    \item Three
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}{Nested Lists}
+  \begin{enumerate}
+    \item One
+    \begin{enumerate}
+      \item Two
+      \item Three
+      \item Four
+    \end{enumerate}
+    \item Five
+    \item Six
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}{Changing Numbering / Bullets}
+  \begin{itemize}
+    \item[--] Dash
+    \item[$-$] Dash
+    \item[$\ast$] Asterisk
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Changing Numbering / Bullets (contd.)}
+  \begin{enumerate}[i]
+    \item Roman numbers
+  \end{enumerate}
+  
+  \begin{enumerate}[1]
+    \item Arabic numbers
+  \end{enumerate}
+  
+  \begin{enumerate}[A]
+    \item Alphabetical
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}{Summary}
+  \begin{itemize}
+    \item Unordered lists can be created using the \texttt{itemize} environment.
+    \item Ordered lists can be created using the \texttt{enumerate} environment.
+    \item Lists can be nested and will be aligned and enumerated properly.
+    \item Use the \texttt{enumitem} package to customize the symbols or enumeration.
+  \end{itemize}
+\end{frame}
+
+\end{document}

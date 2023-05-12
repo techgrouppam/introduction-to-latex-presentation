@@ -1,0 +1,87 @@
+\documentclass{beamer}
+
+\usetheme{Madrid}
+\usecolortheme{default}
+
+\title{Using \LaTeX{} Paragraphs and Sections}
+\subtitle{Structure Your Document}
+\author{Martin}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Sectioning Elements}
+  \begin{itemize}
+    \item \LaTeX{} provides commands to generate section headings
+    \item Sectioning commands: \textbackslash{}section\{\}, \textbackslash{}subsection\{\}, \textbackslash{}subsubsection\{\}, \textbackslash{}paragraph\{\}, \textbackslash{}subparagraph\{\}
+    \item Sections and subsections are numbered and appear in the table of contents
+    \item Paragraphs aren't numbered and don't show in the table of contents
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Example Output}
+  \begin{verbatim}
+\documentclass{article}
+\title{Title of my document}
+\date{2013-09-01}
+\author{John Doe}
+\begin{document}
+\maketitle
+\pagenumbering{gobble}
+\newpage
+\pagenumbering{arabic}
+\section{Section}
+Hello World!
+\subsection{Subsection}
+Structuring a document is easy!
+\end{document}
+  \end{verbatim}
+\end{frame}
+
+\begin{frame}{Hierarchy of Sectioning Elements}
+  \begin{itemize}
+    \item Sections, subsections, and lower-level elements form a hierarchical structure
+    \item Easy to structure documents and maintain consistent formatting
+    \item Example code:
+    \begin{itemize}
+      \item \textbackslash{}section\{\}
+      \item \textbackslash{}subsection\{\}
+      \item \textbackslash{}subsubsection\{\}
+      \item \textbackslash{}paragraph\{\}
+      \item \textbackslash{}subparagraph\{\}
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Example Output (Hierarchy)}
+  \begin{verbatim}
+\documentclass{article}
+\begin{document}
+\section{Section}
+Hello World!
+\subsection{Subsection}
+Structuring a document is easy!
+\subsubsection{Subsubsection}
+More text.
+\paragraph{Paragraph}
+Some more text.
+\subparagraph{Subparagraph}
+Even more text.
+\section{Another section}
+\end{document}
+  \end{verbatim}
+\end{frame}
+
+\begin{frame}{Conclusion}
+  \begin{itemize}
+    \item Structuring your document using sections and paragraphs is simple in \LaTeX{}
+    \item Consistent formatting and easy maintenance
+    \item Next lesson: Introduction to packages and basic math typesetting
+  \end{itemize}
+\end{frame}
+
+\end{document}

@@ -1,0 +1,45 @@
+\documentclass{beamer}
+
+\include{beamer_header.tex}
+
+\begin{document}
+
+
+\title{Generating a Table of Contents in LaTeX}
+
+\frame{\titlepage}
+
+\begin{frame}
+\frametitle{Table of Contents}
+\tableofcontents
+\end{frame}
+
+\section{Generating a Table of Contents}
+
+\begin{frame}
+\frametitle{Generating a Table of Contents}
+LaTeX offers features to automatically generate a table of contents, a list of figures, and a list of tables. It uses the section headings to create the table of contents.
+\end{frame}
+
+\section{List of Figures / Tables}
+
+\begin{frame}
+\frametitle{List of Figures / Tables}
+The generation of a list of figures and tables works the same way. You can use the \texttt{\textbackslash listoffigures} and \texttt{\textbackslash listoftables} commands to create these lists.
+\end{frame}
+
+\section{Depth}
+
+\begin{frame}
+\frametitle{Depth}
+Sometimes it's useful to show only a subset of headings in the table of contents. The \texttt{\textbackslash setcounter\{tocdepth\}\{X\}} command allows you to set the desired depth, where X is the level of depth you want to display.
+\end{frame}
+
+\section{Spacing}
+
+\begin{frame}
+\frametitle{Spacing}
+If you want to change the spacing of the table of contents or the entire document, you can use the \texttt{setspace} package. It provides commands like \texttt{\textbackslash singlespacing} and \texttt{\textbackslash doublespacing} to adjust the spacing.
+\end{frame}
+
+\end{document}
